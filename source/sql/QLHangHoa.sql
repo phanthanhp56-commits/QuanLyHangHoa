@@ -1,0 +1,18 @@
+CREATE DATABASE QL_HangHoa;
+GO
+
+USE QL_HangHoa;
+GO
+
+CREATE TABLE HANGHOA (
+    MaHang VARCHAR(10) PRIMARY KEY,
+    TenHang NVARCHAR(100),
+    DonViTinh NVARCHAR(20),
+    SoLuongTon INT,
+    DonGia FLOAT
+);
+
+INSERT INTO HANGHOA
+VALUES
+('HH01', N'Gao', N'kg', 100, 15000),
+('HH02', N'Banh', N'thung', 50, 120000);
